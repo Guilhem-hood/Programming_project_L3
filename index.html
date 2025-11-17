@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memories Atlas — Rediscover every journey in 3D</title>
+    <meta
+      name="description"
+      content="Memories Atlas is a concept platform that lets you pin photos, stories, and sounds onto an immersive 3D globe so every memory can be revisited."
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg+xml" href="earth-icon.svg" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <video class="bg-video bg-video--primary" autoplay muted playsinline>
+      <source src="intro_vidéo.mp4" type="video/mp4" />
+    </video>
+    <video class="bg-video bg-video--secondary" muted playsinline preload="auto">
+      <source src="video_down.mp4" type="video/mp4" />
+    </video>
+    <header class="hero">
+      <nav class="nav">
+        <div class="logo">
+          <img
+            src="earth-icon.svg"
+            alt="Stylized earth icon"
+            class="logo__icon"
+          />
+          <div class="logo__text">
+            <span>Memories</span>
+            <span>Atlas</span>
+          </div>
+        </div>
+        <div class="nav__cta">
+          <a class="ghost-link" href="#concept">Concept</a>
+          <a class="ghost-link" href="#platform">Platform</a>
+          <a class="ghost-link" href="#contact">Contact</a>
+          <a class="btn btn--highlight" href="prototype/index_plateform.html">
+            Launch platform preview
+          </a>
+        </div>
+      </nav>
+      <div class="hero__grid">
+        <div class="hero__text glass-panel">
+          <p class="eyebrow">A living memory atlas</p>
+          <h1>Rediscover your life by orbiting a tactile 3D world.</h1>
+          <p class="lead">
+            Memories Atlas is a concept website that lets you upload photos,
+            map their stories, and glide across a cinematic globe to relive each
+            adventure with depth, light, and sound.
+          </p>
+          <div class="hero__actions">
+            <button class="btn btn--secondary" data-scroll="#concept">
+              Explore the concept
+            </button>
+            <button class="btn btn--ghost" data-scroll="#platform">
+              See the platform
+            </button>
+          </div>
+          <div class="hero__layers">
+            <article class="layer-card">
+              <p class="layer-card__label">Cartography stack</p>
+              <p class="layer-card__value">DEM + contours + satellite glow</p>
+            </article>
+            <article class="layer-card">
+              <p class="layer-card__label">Memory pins</p>
+              <p class="layer-card__value">Photos • audio • narrative prompts</p>
+            </article>
+            <article class="layer-card">
+              <p class="layer-card__label">Cinematic flight</p>
+              <p class="layer-card__value">Spline camera paths & easing</p>
+            </article>
+          </div>
+        </div>
+        <div class="hero__mockup glass-panel">
+          <div class="globe">
+            <div class="globe__halo"></div>
+            <div class="globe__pins">
+              <span style="--x: 28%; --y: 22%">Paris</span>
+              <span style="--x: 63%; --y: 38%">Kyoto</span>
+              <span style="--x: 48%; --y: 72%">Cape Town</span>
+              <span style="--x: 18%; --y: 58%">Patagonia</span>
+            </div>
+          </div>
+          <div class="floating-card floating-card--primary">
+            <p>Lisbon night ride — resurfacing in Dolby atmospheres.</p>
+          </div>
+          <div class="floating-card floating-card--secondary">
+            <p>Trail with Lila • Montreal • May 2018</p>
+            <progress max="100" value="68"></progress>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section" id="concept">
+        <div class="section__header">
+          <p class="eyebrow">Why build it</p>
+          <h2>The concept</h2>
+          <p>
+            What if your personal archive behaved like a tactile map? Memories
+            Atlas fuses 3D cartography, storytelling, and sensory UI to form an
+            emotional atlas you can orbit.
+          </p>
+        </div>
+        <div class="concept-grid">
+          <article class="concept-card">
+            <h3>01. Import & geotag</h3>
+            <p>
+              Keep EXIF GPS data or drop pins manually, then add context such as
+              companions, weather, sounds, and feelings.
+            </p>
+          </article>
+          <article class="concept-card">
+            <h3>02. Sculpt spatial stories</h3>
+            <p>
+              Curate collections, sequence camera paths, and blend music or
+              voiceover so every tour feels cinematic.
+            </p>
+          </article>
+          <article class="concept-card">
+            <h3>03. Share immersive capsules</h3>
+            <p>
+              Publish private capsules, collaborative trips, or AI-assisted
+              travel logs that friends can experience on any device.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section platform-preview" id="platform">
+        <div class="platform-preview__card">
+          <div>
+            <p class="eyebrow">Sneak peek</p>
+            <h2>Ready to explore the prototype?</h2>
+            <p>
+              Jump straight into the early platform preview: upload photos, drop
+              your first memory pins, and test-drive the cinematic globe.
+            </p>
+          </div>
+          <div class="platform-preview__actions">
+            <a class="btn btn--highlight" href="prototype/index_plateform.html">
+              Open platform preview
+            </a>
+            <small>Loads the in-progress prototype route.</small>
+          </div>
+        </div>
+      </section>
+
+      <section class="section profile" id="founder">
+        <div class="profile__media">
+          <img
+            src="guilhem_photo.jpg"
+            alt="Portrait of Guilhem exploring a mountain landscape"
+            loading="lazy"
+          />
+        </div>
+        <div class="profile__content">
+          <p class="eyebrow">About the builder</p>
+          <h2>Guilhem — explorer, cyclist, geomatics nerd</h2>
+          <p>
+            I chase remote landscapes through mountain sports and long-distance
+            rides, always hunting for new perspectives that only a summit or a
+            winding trail can unlock. That curiosity naturally converged with my
+            love for geomatics and cartography.
+          </p>
+          <p>
+            Memories Atlas is my way to merge field exploration and spatial
+            storytelling: a place where every photo becomes a waypoint and every
+            journey can be replayed on a living map.
+          </p>
+        </div>
+      </section>
+
+      <section class="section section--cta" id="contact">
+        <div class="cta-card">
+          <p class="eyebrow">Stay in the loop</p>
+          <h2>
+            Receive progress logs and be invited to the first private playtests.
+          </h2>
+          <form class="cta-form">
+            <input
+              type="email"
+              name="email"
+              placeholder="Your email address"
+              required
+            />
+            <button type="submit" class="btn btn--primary">
+              Join the early access list
+            </button>
+          </form>
+          <small>
+            Your address stays private and you can unsubscribe anytime.
+          </small>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Memories Atlas — built by Guilhem.</p>
+      <div class="footer__links">
+        <a href="#concept">Concept</a>
+        <a href="#platform">Platform</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
