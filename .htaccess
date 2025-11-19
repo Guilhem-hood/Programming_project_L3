@@ -1,0 +1,10 @@
+# Use a custom 404 page
+ErrorDocument 404 /404.html
+
+# If using pretty URLs, rewrite non-file/non-dir requests to 404.html
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^ /404.html [L]
+</IfModule>
